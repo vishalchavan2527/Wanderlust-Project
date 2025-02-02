@@ -97,9 +97,9 @@ app.use((req, res, next) =>{
 
 
 app.get("/", (req, res) => {
-  console.log(res.locals);
-  res.render("home"); 
+  res.render("home");  // Don't include .ejs extension
 });
+
 
 
 
